@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFBEBF651C1F7F4600CA6934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF641C1F7F4600CA6934 /* AppDelegate.swift */; };
+		BFBEBF671C1F7F4600CA6934 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF661C1F7F4600CA6934 /* ViewController.swift */; };
+		BFBEBF6A1C1F7F4600CA6934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBEBF681C1F7F4600CA6934 /* Main.storyboard */; };
+		BFBEBF6D1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF6B1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodeld */; };
+		BFBEBF6F1C1F7F4700CA6934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBEBF6E1C1F7F4700CA6934 /* Assets.xcassets */; };
+		BFBEBF721C1F7F4700CA6934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBEBF701C1F7F4700CA6934 /* LaunchScreen.storyboard */; };
+		BFBEBF7D1C1F7F4700CA6934 /* KhanAcademyBadgesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF7C1C1F7F4700CA6934 /* KhanAcademyBadgesTests.swift */; };
+		BFBEBF881C1F7F4700CA6934 /* KhanAcademyBadgesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF871C1F7F4700CA6934 /* KhanAcademyBadgesUITests.swift */; };
+		BFBEBF9A1C1F7FCB00CA6934 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF991C1F7FCB00CA6934 /* Database.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFBEBF791C1F7F4700CA6934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFBEBF591C1F7F4600CA6934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFBEBF601C1F7F4600CA6934;
+			remoteInfo = KhanAcademyBadges;
+		};
+		BFBEBF841C1F7F4700CA6934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFBEBF591C1F7F4600CA6934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFBEBF601C1F7F4600CA6934;
+			remoteInfo = KhanAcademyBadges;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFBEBF611C1F7F4600CA6934 /* KhanAcademyBadges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhanAcademyBadges.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBEBF641C1F7F4600CA6934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFBEBF661C1F7F4600CA6934 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFBEBF691C1F7F4600CA6934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFBEBF6C1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KhanAcademyBadges.xcdatamodel; sourceTree = "<group>"; };
+		BFBEBF6E1C1F7F4700CA6934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFBEBF711C1F7F4700CA6934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFBEBF731C1F7F4700CA6934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBEBF781C1F7F4700CA6934 /* KhanAcademyBadgesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhanAcademyBadgesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBEBF7C1C1F7F4700CA6934 /* KhanAcademyBadgesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhanAcademyBadgesTests.swift; sourceTree = "<group>"; };
+		BFBEBF7E1C1F7F4700CA6934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBEBF831C1F7F4700CA6934 /* KhanAcademyBadgesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhanAcademyBadgesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBEBF871C1F7F4700CA6934 /* KhanAcademyBadgesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhanAcademyBadgesUITests.swift; sourceTree = "<group>"; };
+		BFBEBF891C1F7F4700CA6934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBEBF991C1F7FCB00CA6934 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBEBF5E1C1F7F4600CA6934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBEBF751C1F7F4700CA6934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBEBF801C1F7F4700CA6934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFBEBF581C1F7F4600CA6934 = {
+			isa = PBXGroup;
+			children = (
+				BFBEBF631C1F7F4600CA6934 /* KhanAcademyBadges */,
+				BFBEBF7B1C1F7F4700CA6934 /* KhanAcademyBadgesTests */,
+				BFBEBF861C1F7F4700CA6934 /* KhanAcademyBadgesUITests */,
+				BFBEBF621C1F7F4600CA6934 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFBEBF621C1F7F4600CA6934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFBEBF611C1F7F4600CA6934 /* KhanAcademyBadges.app */,
+				BFBEBF781C1F7F4700CA6934 /* KhanAcademyBadgesTests.xctest */,
+				BFBEBF831C1F7F4700CA6934 /* KhanAcademyBadgesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFBEBF631C1F7F4600CA6934 /* KhanAcademyBadges */ = {
+			isa = PBXGroup;
+			children = (
+				BFBEBF951C1F7FC200CA6934 /* Helpers */,
+				BFBEBF961C1F7FC200CA6934 /* Models */,
+				BFBEBF971C1F7FC200CA6934 /* View Controllers */,
+				BFBEBF981C1F7FC200CA6934 /* Views */,
+				BFBEBF641C1F7F4600CA6934 /* AppDelegate.swift */,
+				BFBEBF661C1F7F4600CA6934 /* ViewController.swift */,
+				BFBEBF681C1F7F4600CA6934 /* Main.storyboard */,
+				BFBEBF6E1C1F7F4700CA6934 /* Assets.xcassets */,
+				BFBEBF701C1F7F4700CA6934 /* LaunchScreen.storyboard */,
+				BFBEBF731C1F7F4700CA6934 /* Info.plist */,
+				BFBEBF6B1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodeld */,
+			);
+			path = KhanAcademyBadges;
+			sourceTree = "<group>";
+		};
+		BFBEBF7B1C1F7F4700CA6934 /* KhanAcademyBadgesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFBEBF7C1C1F7F4700CA6934 /* KhanAcademyBadgesTests.swift */,
+				BFBEBF7E1C1F7F4700CA6934 /* Info.plist */,
+			);
+			path = KhanAcademyBadgesTests;
+			sourceTree = "<group>";
+		};
+		BFBEBF861C1F7F4700CA6934 /* KhanAcademyBadgesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFBEBF871C1F7F4700CA6934 /* KhanAcademyBadgesUITests.swift */,
+				BFBEBF891C1F7F4700CA6934 /* Info.plist */,
+			);
+			path = KhanAcademyBadgesUITests;
+			sourceTree = "<group>";
+		};
+		BFBEBF951C1F7FC200CA6934 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFBEBF961C1F7FC200CA6934 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFBEBF991C1F7FCB00CA6934 /* Database.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFBEBF971C1F7FC200CA6934 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BFBEBF981C1F7FC200CA6934 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFBEBF601C1F7F4600CA6934 /* KhanAcademyBadges */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBEBF8C1C1F7F4700CA6934 /* Build configuration list for PBXNativeTarget "KhanAcademyBadges" */;
+			buildPhases = (
+				BFBEBF5D1C1F7F4600CA6934 /* Sources */,
+				BFBEBF5E1C1F7F4600CA6934 /* Frameworks */,
+				BFBEBF5F1C1F7F4600CA6934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KhanAcademyBadges;
+			productName = KhanAcademyBadges;
+			productReference = BFBEBF611C1F7F4600CA6934 /* KhanAcademyBadges.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFBEBF771C1F7F4700CA6934 /* KhanAcademyBadgesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBEBF8F1C1F7F4700CA6934 /* Build configuration list for PBXNativeTarget "KhanAcademyBadgesTests" */;
+			buildPhases = (
+				BFBEBF741C1F7F4700CA6934 /* Sources */,
+				BFBEBF751C1F7F4700CA6934 /* Frameworks */,
+				BFBEBF761C1F7F4700CA6934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFBEBF7A1C1F7F4700CA6934 /* PBXTargetDependency */,
+			);
+			name = KhanAcademyBadgesTests;
+			productName = KhanAcademyBadgesTests;
+			productReference = BFBEBF781C1F7F4700CA6934 /* KhanAcademyBadgesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFBEBF821C1F7F4700CA6934 /* KhanAcademyBadgesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBEBF921C1F7F4700CA6934 /* Build configuration list for PBXNativeTarget "KhanAcademyBadgesUITests" */;
+			buildPhases = (
+				BFBEBF7F1C1F7F4700CA6934 /* Sources */,
+				BFBEBF801C1F7F4700CA6934 /* Frameworks */,
+				BFBEBF811C1F7F4700CA6934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFBEBF851C1F7F4700CA6934 /* PBXTargetDependency */,
+			);
+			name = KhanAcademyBadgesUITests;
+			productName = KhanAcademyBadgesUITests;
+			productReference = BFBEBF831C1F7F4700CA6934 /* KhanAcademyBadgesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFBEBF591C1F7F4600CA6934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Augmented Humanity";
+				TargetAttributes = {
+					BFBEBF601C1F7F4600CA6934 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					BFBEBF771C1F7F4700CA6934 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BFBEBF601C1F7F4600CA6934;
+					};
+					BFBEBF821C1F7F4700CA6934 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BFBEBF601C1F7F4600CA6934;
+					};
+				};
+			};
+			buildConfigurationList = BFBEBF5C1C1F7F4600CA6934 /* Build configuration list for PBXProject "KhanAcademyBadges" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFBEBF581C1F7F4600CA6934;
+			productRefGroup = BFBEBF621C1F7F4600CA6934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFBEBF601C1F7F4600CA6934 /* KhanAcademyBadges */,
+				BFBEBF771C1F7F4700CA6934 /* KhanAcademyBadgesTests */,
+				BFBEBF821C1F7F4700CA6934 /* KhanAcademyBadgesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFBEBF5F1C1F7F4600CA6934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBEBF721C1F7F4700CA6934 /* LaunchScreen.storyboard in Resources */,
+				BFBEBF6F1C1F7F4700CA6934 /* Assets.xcassets in Resources */,
+				BFBEBF6A1C1F7F4600CA6934 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBEBF761C1F7F4700CA6934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBEBF811C1F7F4700CA6934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBEBF5D1C1F7F4600CA6934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBEBF671C1F7F4600CA6934 /* ViewController.swift in Sources */,
+				BFBEBF6D1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodeld in Sources */,
+				BFBEBF9A1C1F7FCB00CA6934 /* Database.swift in Sources */,
+				BFBEBF651C1F7F4600CA6934 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBEBF741C1F7F4700CA6934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBEBF7D1C1F7F4700CA6934 /* KhanAcademyBadgesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFBEBF7F1C1F7F4700CA6934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBEBF881C1F7F4700CA6934 /* KhanAcademyBadgesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFBEBF7A1C1F7F4700CA6934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFBEBF601C1F7F4600CA6934 /* KhanAcademyBadges */;
+			targetProxy = BFBEBF791C1F7F4700CA6934 /* PBXContainerItemProxy */;
+		};
+		BFBEBF851C1F7F4700CA6934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFBEBF601C1F7F4600CA6934 /* KhanAcademyBadges */;
+			targetProxy = BFBEBF841C1F7F4700CA6934 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFBEBF681C1F7F4600CA6934 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBEBF691C1F7F4600CA6934 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFBEBF701C1F7F4700CA6934 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBEBF711C1F7F4700CA6934 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFBEBF8A1C1F7F4700CA6934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFBEBF8B1C1F7F4700CA6934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFBEBF8D1C1F7F4700CA6934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KhanAcademyBadges/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AH.KhanAcademyBadges;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFBEBF8E1C1F7F4700CA6934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KhanAcademyBadges/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AH.KhanAcademyBadges;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BFBEBF901C1F7F4700CA6934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KhanAcademyBadgesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AH.KhanAcademyBadgesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KhanAcademyBadges.app/KhanAcademyBadges";
+			};
+			name = Debug;
+		};
+		BFBEBF911C1F7F4700CA6934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KhanAcademyBadgesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AH.KhanAcademyBadgesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KhanAcademyBadges.app/KhanAcademyBadges";
+			};
+			name = Release;
+		};
+		BFBEBF931C1F7F4700CA6934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KhanAcademyBadgesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AH.KhanAcademyBadgesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KhanAcademyBadges;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BFBEBF941C1F7F4700CA6934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KhanAcademyBadgesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AH.KhanAcademyBadgesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KhanAcademyBadges;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFBEBF5C1C1F7F4600CA6934 /* Build configuration list for PBXProject "KhanAcademyBadges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBEBF8A1C1F7F4700CA6934 /* Debug */,
+				BFBEBF8B1C1F7F4700CA6934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBEBF8C1C1F7F4700CA6934 /* Build configuration list for PBXNativeTarget "KhanAcademyBadges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBEBF8D1C1F7F4700CA6934 /* Debug */,
+				BFBEBF8E1C1F7F4700CA6934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFBEBF8F1C1F7F4700CA6934 /* Build configuration list for PBXNativeTarget "KhanAcademyBadgesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBEBF901C1F7F4700CA6934 /* Debug */,
+				BFBEBF911C1F7F4700CA6934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFBEBF921C1F7F4700CA6934 /* Build configuration list for PBXNativeTarget "KhanAcademyBadgesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBEBF931C1F7F4700CA6934 /* Debug */,
+				BFBEBF941C1F7F4700CA6934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFBEBF6B1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFBEBF6C1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodel */,
+			);
+			currentVersion = BFBEBF6C1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodel */;
+			path = KhanAcademyBadges.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFBEBF591C1F7F4600CA6934 /* Project object */;
+}
