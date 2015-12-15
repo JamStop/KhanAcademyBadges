@@ -6,12 +6,17 @@
 //  Copyright © 2015 Augmented Humanity. All rights reserved.
 //
 
+
+
+
+// Didn't expect your server response haha, messed up :(
+
 import Foundation
 import JSONHelper
 import RxSwift
 import Alamofire
 
-class Database {
+class KhanDatabase {
     
     typealias JSON = [String: AnyObject]
     typealias CompletionHandler = (response: JSON? , error: DatabaseError?) -> Void
@@ -74,6 +79,7 @@ class Database {
                 
                 if (response.statusCode == 200) {
                     
+                    print(response)
                     guard let responseJSON = Response.result.value as? JSON else {
                         handler?(response: nil, error: .ErrorParsingJSON)
                         return
