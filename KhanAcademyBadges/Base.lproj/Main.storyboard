@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Badges Table View Controller-->
@@ -11,15 +12,15 @@
             <objects>
                 <tableViewController id="hfL-3a-rCi" customClass="BadgesTableViewController" customModule="KhanAcademyBadges" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="njN-fR-KD3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="badgeCell" rowHeight="80" id="h6s-Hn-JMt" customClass="BadgeTableViewCell" customModule="KhanAcademyBadges" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h6s-Hn-JMt" id="WdI-R1-ZBz">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badge Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTK-S1-cAL">
@@ -55,10 +56,62 @@
                         </connections>
                     </tableView>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5c-Ug-5Lh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="85" y="-138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ddO-xa-Gfm">
+            <objects>
+                <viewController id="DJm-RT-3WW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ofs-HF-vM7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sue-gF-9Qc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tg8-dh-23v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4RS-3B-axO">
+                                <rect key="frame" x="41" y="50" width="238" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4RS-3B-axO" secondAttribute="height" multiplier="1:1" id="nel-wm-pue"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubj-nN-jTf">
+                                <rect key="frame" x="132" y="330" width="57" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-Lf-l3i">
+                                <rect key="frame" x="16" y="374" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4RS-3B-axO" secondAttribute="trailing" constant="25" id="4CO-In-xvA"/>
+                            <constraint firstItem="Ubj-nN-jTf" firstAttribute="centerY" secondItem="tg8-dh-23v" secondAttribute="centerY" constant="64" id="Kr3-sl-dDa"/>
+                            <constraint firstItem="pfJ-Lf-l3i" firstAttribute="trailing" secondItem="tg8-dh-23v" secondAttribute="trailingMargin" id="TXr-IY-mRo"/>
+                            <constraint firstItem="Ubj-nN-jTf" firstAttribute="centerX" secondItem="tg8-dh-23v" secondAttribute="centerX" id="XMj-vX-RkZ"/>
+                            <constraint firstItem="pfJ-Lf-l3i" firstAttribute="leading" secondItem="tg8-dh-23v" secondAttribute="leadingMargin" id="cJi-2g-PEG"/>
+                            <constraint firstItem="4RS-3B-axO" firstAttribute="centerX" secondItem="tg8-dh-23v" secondAttribute="centerX" id="hz7-2B-5nQ"/>
+                            <constraint firstItem="pfJ-Lf-l3i" firstAttribute="top" secondItem="Ubj-nN-jTf" secondAttribute="bottom" constant="8" id="n2s-BY-uRg"/>
+                            <constraint firstItem="4RS-3B-axO" firstAttribute="top" secondItem="Ofs-HF-vM7" secondAttribute="bottom" constant="50" id="tah-10-0IN"/>
+                            <constraint firstItem="4RS-3B-axO" firstAttribute="leading" secondItem="tg8-dh-23v" secondAttribute="leadingMargin" constant="25" id="zPK-zf-T1D"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9I1-L6-DDE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="-163"/>
         </scene>
     </scenes>
 </document>

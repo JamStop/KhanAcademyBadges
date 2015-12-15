@@ -86,12 +86,13 @@ class BadgesTableViewController: UITableViewController {
         // Check for data
         if jsonData != [] {
             let url = NSURL(string: String(self.jsonData[indexPath.row]["icon_src"]!))
-            let badgeName = String(self.jsonData[indexPath.row]["type_label"]!)
             cell.badgeImageView!.sd_setImageWithURL(url)
-            cell.badgeNameLabel.text = badgeName
 
         }
-
+        
+        let badgeName = String(self.jsonData[indexPath.row]["type_label"]!)
+        cell.badgeNameLabel.text = badgeName
+        
         return cell
     }
     
@@ -107,6 +108,12 @@ class BadgesTableViewController: UITableViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    // MARK: - Information
+    
+    func presentInfo(indexPath: Int) {
+        
     }
     
     
