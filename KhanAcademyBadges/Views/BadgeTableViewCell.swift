@@ -12,6 +12,8 @@ class BadgeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var badgeImageView: UIImageView?
     @IBOutlet weak var badgeNameLabel: UILabel!
+    
+    var badgeInformation: String?
 
 
 

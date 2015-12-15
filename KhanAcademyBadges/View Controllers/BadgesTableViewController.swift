@@ -85,13 +85,15 @@ class BadgesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("badgeCell", forIndexPath: indexPath) as! BadgeTableViewCell
         // Check for data
         if jsonData != [] {
-            let url = NSURL(string: String(self.jsonData[indexPath.row]["icon_src"]!))
+            let url = NSURL(string: String(self.jsonData[indexPath.row]["large_icon_src"]!))
             cell.badgeImageView!.sd_setImageWithURL(url)
 
         }
         
         let badgeName = String(self.jsonData[indexPath.row]["type_label"]!)
+        let badgeInformation = String(self.jsonData[indexPath.row]["translated_description"]!)
         cell.badgeNameLabel.text = badgeName
+        cell.badgeInformation = badgeInformation
         
         return cell
     }
@@ -103,19 +105,19 @@ class BadgesTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.tableView.reloadData()
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! BadgeTableViewCell
+        
+        let badgeInformationController = self.storyboard?.instantiateViewControllerWithIdentifier("BadgeInformation") as! BadgeInformationViewController
+        badgeInformationController.initWithBadges(cell.badgeImageView!.image!, title: cell.badgeNameLabel!.text!, description: cell.badgeInformation!)
+        
+        self.presentViewController(badgeInformationController, animated: true, completion: nil)
+        
+        
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
-    // MARK: - Information
-    
-    func presentInfo(indexPath: Int) {
-        
-    }
-    
     
 
 }

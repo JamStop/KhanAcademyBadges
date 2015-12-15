@@ -55,6 +55,7 @@
                             <outlet property="delegate" destination="hfL-3a-rCi" id="xXv-vN-tIy"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="xTy-Nw-q2D"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
@@ -62,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="85" y="-138"/>
         </scene>
-        <!--View Controller-->
+        <!--Badge Information View Controller-->
         <scene sceneID="ddO-xa-Gfm">
             <objects>
-                <viewController id="DJm-RT-3WW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BadgeInformation" id="DJm-RT-3WW" customClass="BadgeInformationViewController" customModule="KhanAcademyBadges" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ofs-HF-vM7"/>
                         <viewControllerLayoutGuide type="bottom" id="Sue-gF-9Qc"/>
@@ -108,6 +109,11 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="badgeDetailLabel" destination="pfJ-Lf-l3i" id="DvF-x8-WuC"/>
+                        <outlet property="badgeTitleLabel" destination="Ubj-nN-jTf" id="oy0-ON-OYo"/>
+                        <outlet property="badgeView" destination="4RS-3B-axO" id="EjB-uv-BOX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9I1-L6-DDE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
