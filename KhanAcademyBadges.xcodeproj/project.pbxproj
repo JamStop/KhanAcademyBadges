@@ -17,6 +17,8 @@
 		BFBEBF9A1C1F7FCB00CA6934 /* KhanDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF991C1F7FCB00CA6934 /* KhanDatabase.swift */; };
 		BFBEBF9E1C1F89C700CA6934 /* BadgesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF9D1C1F89C700CA6934 /* BadgesTableViewController.swift */; };
 		BFBEBFA21C1F983500CA6934 /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBFA11C1F983500CA6934 /* BadgeTableViewCell.swift */; };
+		BFBEBFA41C1FBC3700CA6934 /* BadgeInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBFA31C1FBC3700CA6934 /* BadgeInformationView.swift */; };
+		BFBEBFA61C1FBC9D00CA6934 /* BadgeInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBEBFA51C1FBC9D00CA6934 /* BadgeInformationView.xib */; };
 		FB31D0EECE8AA6D69D2F79AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070AB373F4D2EA6A76C1AF6 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		BFBEBF991C1F7FCB00CA6934 /* KhanDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KhanDatabase.swift; path = ../Models/KhanDatabase.swift; sourceTree = "<group>"; };
 		BFBEBF9D1C1F89C700CA6934 /* BadgesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgesTableViewController.swift; sourceTree = "<group>"; };
 		BFBEBFA11C1F983500CA6934 /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
+		BFBEBFA31C1FBC3700CA6934 /* BadgeInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeInformationView.swift; sourceTree = "<group>"; };
+		BFBEBFA51C1FBC9D00CA6934 /* BadgeInformationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BadgeInformationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				BFBEBFA11C1F983500CA6934 /* BadgeTableViewCell.swift */,
+				BFBEBFA31C1FBC3700CA6934 /* BadgeInformationView.swift */,
+				BFBEBFA51C1FBC9D00CA6934 /* BadgeInformationView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFBEBF721C1F7F4700CA6934 /* LaunchScreen.storyboard in Resources */,
+				BFBEBFA61C1FBC9D00CA6934 /* BadgeInformationView.xib in Resources */,
 				BFBEBF6F1C1F7F4700CA6934 /* Assets.xcassets in Resources */,
 				BFBEBF6A1C1F7F4600CA6934 /* Main.storyboard in Resources */,
 			);
@@ -375,6 +382,7 @@
 				BFBEBFA21C1F983500CA6934 /* BadgeTableViewCell.swift in Sources */,
 				BFBEBF6D1C1F7F4600CA6934 /* KhanAcademyBadges.xcdatamodeld in Sources */,
 				BFBEBF9A1C1F7FCB00CA6934 /* KhanDatabase.swift in Sources */,
+				BFBEBFA41C1FBC3700CA6934 /* BadgeInformationView.swift in Sources */,
 				BFBEBF651C1F7F4600CA6934 /* AppDelegate.swift in Sources */,
 				BFBEBF9E1C1F89C700CA6934 /* BadgesTableViewController.swift in Sources */,
 			);

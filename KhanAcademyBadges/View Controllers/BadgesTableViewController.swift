@@ -12,14 +12,6 @@ import SDWebImage
 
 class BadgesTableViewController: UITableViewController {
     
-    
-    //        let actInd : UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 80, 80)) as UIActivityIndicatorView
-    //        actInd.center = self.view.center
-    //        actInd.hidesWhenStopped = true
-    //        actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge
-    //        self.view.addSubview(actInd)
-    //        actInd.startAnimating()
-    
     typealias badgeResponses = [NSDictionary]
     
     private let database = KhanDatabase()
@@ -46,8 +38,6 @@ class BadgesTableViewController: UITableViewController {
                     self.jsonData.append(item as! NSDictionary)
                 }
                 
-                print(String(self.jsonData[0]["icon_src"]))
-                
                 dispatch_async(dispatch_get_main_queue(), {
                     self.tableView.reloadData()
                 })
@@ -58,7 +48,7 @@ class BadgesTableViewController: UITableViewController {
         
         task.resume()
         
-        // Doesn't get the expected response haha
+        // Doesn't get the expected response
 //        database.rx_getBadgeCategories()
 //            .subscribe(
 //                onNext: { (jsonResp) -> Void in
@@ -87,19 +77,16 @@ class BadgesTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(jsonData.count)
         return (jsonData.count)
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("badgeCell", forIndexPath: indexPath) as! BadgeTableViewCell
-        
+        // Check for data
         if jsonData != [] {
-        
             let url = NSURL(string: String(self.jsonData[indexPath.row]["icon_src"]!))
             let badgeName = String(self.jsonData[indexPath.row]["type_label"]!)
-
             cell.badgeImageView!.sd_setImageWithURL(url)
             cell.badgeNameLabel.text = badgeName
 
@@ -116,6 +103,10 @@ class BadgesTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.reloadData()
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
     

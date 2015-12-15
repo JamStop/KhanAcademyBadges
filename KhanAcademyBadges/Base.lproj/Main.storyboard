@@ -22,25 +22,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eF8-8e-636">
-                                            <rect key="frame" x="0.0" y="0.0" width="79.5" height="79.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="eF8-8e-636" secondAttribute="height" multiplier="1:1" id="htZ-jR-wtm"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badge Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTK-S1-cAL">
                                             <rect key="frame" x="105" y="25" width="144.5" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eF8-8e-636">
+                                            <rect key="frame" x="18" y="18" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="eF8-8e-636" secondAttribute="height" multiplier="1:1" id="htZ-jR-wtm"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="eF8-8e-636" firstAttribute="top" secondItem="WdI-R1-ZBz" secondAttribute="top" id="7SB-6g-rgr"/>
-                                        <constraint firstItem="eF8-8e-636" firstAttribute="leading" secondItem="WdI-R1-ZBz" secondAttribute="leading" id="DPd-Ge-skl"/>
+                                        <constraint firstItem="eF8-8e-636" firstAttribute="top" secondItem="WdI-R1-ZBz" secondAttribute="top" constant="18" id="7SB-6g-rgr"/>
+                                        <constraint firstItem="eF8-8e-636" firstAttribute="leading" secondItem="WdI-R1-ZBz" secondAttribute="leading" constant="18" id="DPd-Ge-skl"/>
                                         <constraint firstItem="CTK-S1-cAL" firstAttribute="centerY" secondItem="WdI-R1-ZBz" secondAttribute="centerY" id="JxW-O1-iND"/>
-                                        <constraint firstAttribute="bottom" secondItem="eF8-8e-636" secondAttribute="bottom" id="MaL-rZ-sy0"/>
-                                        <constraint firstItem="CTK-S1-cAL" firstAttribute="leading" secondItem="eF8-8e-636" secondAttribute="trailing" constant="25.5" id="TjE-wj-RgQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="eF8-8e-636" secondAttribute="bottom" constant="17.5" id="MaL-rZ-sy0"/>
+                                        <constraint firstItem="CTK-S1-cAL" firstAttribute="leading" secondItem="eF8-8e-636" secondAttribute="trailing" constant="43" id="TjE-wj-RgQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -54,6 +54,7 @@
                             <outlet property="delegate" destination="hfL-3a-rCi" id="xXv-vN-tIy"/>
                         </connections>
                     </tableView>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5c-Ug-5Lh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
