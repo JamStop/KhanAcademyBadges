@@ -16,7 +16,6 @@
 		BFBEBF881C1F7F4700CA6934 /* KhanAcademyBadgesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF871C1F7F4700CA6934 /* KhanAcademyBadgesUITests.swift */; };
 		BFBEBF9A1C1F7FCB00CA6934 /* KhanDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF991C1F7FCB00CA6934 /* KhanDatabase.swift */; };
 		BFBEBF9E1C1F89C700CA6934 /* BadgesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBF9D1C1F89C700CA6934 /* BadgesTableViewController.swift */; };
-		BFBEBFA01C1F979D00CA6934 /* BadgeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBEBF9F1C1F979D00CA6934 /* BadgeTableViewCell.xib */; };
 		BFBEBFA21C1F983500CA6934 /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEBFA11C1F983500CA6934 /* BadgeTableViewCell.swift */; };
 		FB31D0EECE8AA6D69D2F79AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5070AB373F4D2EA6A76C1AF6 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -57,7 +56,6 @@
 		BFBEBF891C1F7F4700CA6934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFBEBF991C1F7FCB00CA6934 /* KhanDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KhanDatabase.swift; path = ../Models/KhanDatabase.swift; sourceTree = "<group>"; };
 		BFBEBF9D1C1F89C700CA6934 /* BadgesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgesTableViewController.swift; sourceTree = "<group>"; };
-		BFBEBF9F1C1F979D00CA6934 /* BadgeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BadgeTableViewCell.xib; sourceTree = "<group>"; };
 		BFBEBFA11C1F983500CA6934 /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,7 +185,6 @@
 		BFBEBF981C1F7FC200CA6934 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BFBEBF9F1C1F979D00CA6934 /* BadgeTableViewCell.xib */,
 				BFBEBFA11C1F983500CA6934 /* BadgeTableViewCell.swift */,
 			);
 			path = Views;
@@ -301,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFBEBF721C1F7F4700CA6934 /* LaunchScreen.storyboard in Resources */,
-				BFBEBFA01C1F979D00CA6934 /* BadgeTableViewCell.xib in Resources */,
 				BFBEBF6F1C1F7F4700CA6934 /* Assets.xcassets in Resources */,
 				BFBEBF6A1C1F7F4600CA6934 /* Main.storyboard in Resources */,
 			);

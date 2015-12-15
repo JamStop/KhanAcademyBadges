@@ -8,8 +8,17 @@
 
 import UIKit
 import RxSwift
+import SDWebImage
 
 class BadgesTableViewController: UITableViewController {
+    
+    
+    //        let actInd : UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 80, 80)) as UIActivityIndicatorView
+    //        actInd.center = self.view.center
+    //        actInd.hidesWhenStopped = true
+    //        actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge
+    //        self.view.addSubview(actInd)
+    //        actInd.startAnimating()
     
     typealias badgeResponses = [NSDictionary]
     
@@ -17,7 +26,7 @@ class BadgesTableViewController: UITableViewController {
     
     var disposeBag = DisposeBag()
     
-    let url = NSURL(fileURLWithPath: "http://www.khanacademy.org/api/v1/badges/categories")
+    let url = "http://www.khanacademy.org/api/v1/badges/categories/"
     var jsonData: badgeResponses = []
 
     override func viewDidLoad() {
@@ -38,8 +47,12 @@ class BadgesTableViewController: UITableViewController {
                 }
                 
                 print(String(self.jsonData[0]["icon_src"]))
+                
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.tableView.reloadData()
+                })
             } catch _ {
-                // Error
+                return
             }
         }
         
@@ -74,11 +87,25 @@ class BadgesTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        print(jsonData.count)
+        return (jsonData.count)
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("test", forIndexPath: indexPath)
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("badgeCell", forIndexPath: indexPath) as! BadgeTableViewCell
+        
+        print(indexPath.row)
+        
+        if jsonData != [] {
+//            print(self.jsonData[0])
+//            print(NSURL(fileURLWithPath: String(self.jsonData[indexPath.row]["icon_src"])))
+//            cell.badgeImageView!.sd_setImageWithURL(NSURL(fileURLWithPath: String(self.jsonData[indexPath.row]["icon_src"])))
+            
+            cell.badgeImageView!.image = UIImage(named: "test")
+            
+
+        }
 
 
         return cell
@@ -88,6 +115,10 @@ class BadgesTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return self.view.frame.height/6
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.tableView.reloadData()
     }
     
 
