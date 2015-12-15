@@ -32,7 +32,7 @@ class KhanDatabase {
         case UnexpectedError(message: String)
     }
     
-    // OMG this doesn't work
+    // This doesn't work very well
     func rx_getImageWithUrl(URL: NSURL) -> Observable<NSData>{
         return create { observer in
             let _ = NSURLSession.sharedSession().dataTaskWithURL(URL) {

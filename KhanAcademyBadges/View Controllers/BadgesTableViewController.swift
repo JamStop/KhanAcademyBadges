@@ -95,37 +95,15 @@ class BadgesTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("badgeCell", forIndexPath: indexPath) as! BadgeTableViewCell
         
-        print(indexPath.row)
-        
         if jsonData != [] {
-            
-            // Ugh apparently SDWebImage is deprecated now
-            
-            let url = (NSURL(fileURLWithPath: String(self.jsonData[indexPath.row]["icon_src"])))
-            
-//            cell.badgeImageView!.sd_setImageWithURL(NSURL(fileURLWithPath: String(self.jsonData[indexPath.row]["icon_src"])))
-            
-            cell.badgeImageView!.image = UIImage(named: "test")
         
-            database.rx_getImageWithUrl(url)
-                .subscribe(
-                    onNext: { (data) -> Void in
-                        cell.badgeImageView?.image = UIImage(data: data)
-                        print("working")
-                    },
-                    onError: { (error) -> Void in
-                        print("Error: \(error)")
-                    },
-                    onCompleted: { () -> Void in
-                        print("Completed")
-                    },
-                    onDisposed: { () -> Void in
-                        
-                })
-                .addDisposableTo(disposeBag)
+            let url = NSURL(string: String(self.jsonData[indexPath.row]["icon_src"]!))
+            let badgeName = String(self.jsonData[indexPath.row]["type_label"]!)
+
+            cell.badgeImageView!.sd_setImageWithURL(url)
+            cell.badgeNameLabel.text = badgeName
 
         }
-
 
         return cell
     }
@@ -139,6 +117,7 @@ class BadgesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.reloadData()
     }
+    
     
 
 }
