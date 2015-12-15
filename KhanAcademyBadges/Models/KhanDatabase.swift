@@ -31,6 +31,25 @@ class KhanDatabase {
         case UnexpectedResponseError(message: String?, statusCode: Int?)
         case UnexpectedError(message: String)
     }
+    
+    // OMG this doesn't work
+    func rx_getImageWithUrl(URL: NSURL) -> Observable<NSData>{
+        return create { observer in
+            let _ = NSURLSession.sharedSession().dataTaskWithURL(URL) {
+                (data, response, error) in
+                if let error = error {
+                    observer.onError(error)
+                } else {
+                    print(data)
+                    observer.onNext(data!)
+                    observer.onCompleted()
+                }
+            }
+            
+            return NopDisposable.instance
+        }
+        
+    }
 
     
     func rx_getBadgeCategories() -> Observable<JSON?> {

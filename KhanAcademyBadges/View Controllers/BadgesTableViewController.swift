@@ -98,12 +98,31 @@ class BadgesTableViewController: UITableViewController {
         print(indexPath.row)
         
         if jsonData != [] {
-//            print(self.jsonData[0])
-//            print(NSURL(fileURLWithPath: String(self.jsonData[indexPath.row]["icon_src"])))
+            
+            // Ugh apparently SDWebImage is deprecated now
+            
+            let url = (NSURL(fileURLWithPath: String(self.jsonData[indexPath.row]["icon_src"])))
+            
 //            cell.badgeImageView!.sd_setImageWithURL(NSURL(fileURLWithPath: String(self.jsonData[indexPath.row]["icon_src"])))
             
             cell.badgeImageView!.image = UIImage(named: "test")
-            
+        
+            database.rx_getImageWithUrl(url)
+                .subscribe(
+                    onNext: { (data) -> Void in
+                        cell.badgeImageView?.image = UIImage(data: data)
+                        print("working")
+                    },
+                    onError: { (error) -> Void in
+                        print("Error: \(error)")
+                    },
+                    onCompleted: { () -> Void in
+                        print("Completed")
+                    },
+                    onDisposed: { () -> Void in
+                        
+                })
+                .addDisposableTo(disposeBag)
 
         }
 
